@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Front-end') {
       agent {
-        docker { image 'alpine:latest' }
+        docker { image 'maven:3-alpine' }
       }
       steps {
         sh 'node --version'
